@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width;initical-scale=1;maximum-scale=1">
+    <meta charset="UTF-8">
+    <!--<meta charset="UTF-8" name="viewport" content="width=device-width,initical-scale=1,maximum-scale=1">-->
     <title>Title</title>
     <style>
         .blueback{
@@ -26,7 +27,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: white;
         }
         .lunbotu{
             width: 470px;
@@ -106,37 +106,112 @@
             height: 1900px;
             background: url(../img/波线.png) no-repeat top center;
             background-size: 40% 100%;
+            position: relative;
+        }
+        .shuli{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            margin-left: 85px;
+            margin-top: 80px;
+        }
+        .pinggu{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            margin-left: 690px;
+            margin-top: 320px;
+        }
+        .baojia{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            margin-left: 160px;
+            margin-top: 600px;
+        }
+        .hezuo{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            margin-left: 630px;
+            margin-top: 860px;
+        }
+        .fuwu{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            margin-left: 160px;
+            margin-top: 1130px;
+        }
+        .shangxian{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            margin-left: 640px;
+            margin-top: 1420px;
+        }
+        .shouhou{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            margin-left: 90px;
+            margin-top: 1680px;
         }
         .anlibtn1{
             width: 212px;
-            height: 60px;
+            height: 74px;
             border: 0 solid transparent;
             background-color: rgb(23, 112, 206);
             color:white;
             font-size: 30px;
+            border-radius: 7px;
         }
         .anlibtn2{
             width: 212px;
-            height: 60px;
+            height: 74px;
             border: 0 solid transparent;
             margin-left:10px;
             background-color: lightgray;
             color:white;
             font-size: 30px;
+            border-radius: 7px;
         }
         .picbtn{
-            height: 50px;
-            width:120px;
+            height: 60px;
+            width:160px;
             border:0 solid transparent;
             border-radius: 30px;
-            background-color: lightgray;
-            color:white;
+            background-color: #f4f4f4;
+            color: #a8a8a8;
             font-size: 28px;
         }
     </style>
 </head>
 <body style="margin: 0;">
-    <div style="width: 100%;height: 950px;">
+    <div style="width: 100%;height: 130px;background-color: #01162b;position: relative">
+        <div style="width: 90%;height: 130px;display: flex;justify-content: space-between;align-items: center;margin: auto">
+            <div onclick="menu"><img src="../img/menu.png" style="width: 66px;height: 46px"/></div>
+            <div><img src="../img/组 3.png" style="width: 200px;height: 70px"/></div>
+            <div onclick="langimg"><img src="../img/英.png" style="width: 60px;height: 60px"/></div>
+        </div>
+        <div v-show="menulist" class="chuizhi" style="width: 300px;height: 330px;background-color: #1d0e04;opacity:0.7;position:absolute;z-index: 10;color: white;font-size: 42px;top:136px;left:8px;">
+            <div style="height: 110px;width: 100%;border: 1px solid #efefef" class="chuizhi">菜单一</div>
+            <div style="height: 110px;width: 100%;border: 1px solid #efefef" class="chuizhi">菜单二</div>
+            <div style="height: 110px;width: 100%;border: 1px solid #efefef" class="chuizhi">菜单三</div>
+        </div>
+        <div v-show="langlist" class="chuizhi" style="width: 200px;height: 220px;background-color: #1d0e04;opacity:0.7;position:absolute;z-index: 10;color: white;font-size: 42px;top:136px;right:8px;">
+            <div style="height: 110px;width: 100%;border: 1px solid #efefef" class="chuizhi">中文</div>
+            <div style="height: 110px;width: 100%;border: 1px solid #efefef" class="chuizhi">英语</div>
+        </div>
+    </div>
+    <div style="width: 100%;height: 950px;position:absolute;z-index: 2;">
         <div class="blueback">
             <div style="display: flex;flex-direction: column;align-items: center;">
                 <h3 style="font-size: 44px">软件定制开发</h3>
@@ -167,13 +242,13 @@
             </div>
         </div>
     </div>
-    <div style="width: 100%;height: 2400px;">
+    <div style="width: 98%;height: 2400px;margin: auto">
         <div class="chuizhi" style="height: 260px">
             <h3 style="font-size: 45px;">按需定制化开发</h3>
             <span style="font-size: 35px;margin-top: -30px">助你打造智能商业体系，抢占社交红利</span>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color1">
                     <img src="../img/礼物.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -184,7 +259,7 @@
             </div>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color2">
                     <img src="../img/商城.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -195,7 +270,7 @@
             </div>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color3">
                     <img src="../img/箭头.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -206,7 +281,7 @@
             </div>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color4">
                     <img src="../img/mini_app.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -217,7 +292,7 @@
             </div>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color5">
                     <img src="../img/柱状图.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -228,7 +303,7 @@
             </div>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color6">
                     <img src="../img/微信.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -239,7 +314,7 @@
             </div>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color7">
                     <img src="../img/政府.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -250,7 +325,7 @@
             </div>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color8">
                     <img src="../img/旅游.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -261,7 +336,7 @@
             </div>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color9">
                     <img src="../img/酒店.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -272,7 +347,7 @@
             </div>
         </div>
         <div class="xitongtou">
-            <div style="width: 16%;padding-left:30px;">
+            <div style="width: 16%;">
                 <div class="xitong color10">
                     <img src="../img/笔.png" style="width: 60px;height: 60px;margin: 20px 20px 20px 20px"/>
                 </div>
@@ -388,13 +463,42 @@
             </div>
         </div>
     </div>
-    <div style="width: 100%;height:2150px;background-color:rgb(222, 240, 255);">
-        <div class="chuizhi" style="background-color:rgb(222, 240, 255);height: 200px;">
+    <div style="width: 100%;height:2150px;background-color: #ebf3ff;">
+        <div class="chuizhi" style="background-color: #ebf3ff;height: 200px;">
             <h1 style="font-size: 45px;">我们的服务流程</h1>
         </div>
-        <div class="liucheng"></div>
+        <div class="liucheng">
+            <div class="shuli chuizhi">
+                <img src="../img/diaoyan 拷贝.png" style="height:60px; width:54px;" />
+                <span style="font-size: 26px;margin-top: 5px;color: gray">梳理需求</span>
+            </div>
+            <div class="pinggu chuizhi">
+                <img src="../img/时间 拷贝.png" height="52" width="52"/>
+                <span style="font-size: 26px;margin-top: 5px;color: gray">评估周期</span>
+            </div>
+            <div class="baojia chuizhi">
+                <img src="../img/anxubaojia 拷贝.png" height="50" width="47"/>
+                <span style="font-size: 26px;margin-top: 5px;color: gray">按需报价</span>
+            </div>
+            <div class="hezuo chuizhi">
+                <img src="../img/hezuo.png" height="53" width="63"/>
+                <span style="font-size: 26px;margin-top: 5px;color: gray">确定合作</span>
+            </div>
+            <div class="fuwu chuizhi">
+                <img src="../img/心.png" height="51" width="55"/>
+                <span style="font-size: 26px;margin-top: 5px;color: gray">执行服务</span>
+            </div>
+            <div class="shangxian chuizhi">
+                <img src="../img/上线.png" height="50" width="50"/>
+                <span style="font-size: 26px;margin-top: 5px;color: gray">项目上线</span>
+            </div>
+            <div class="shouhou chuizhi">
+                <img src="../img/售后.png" height="58" width="49"/>
+                <span style="font-size: 26px;margin-top: 5px;color: gray">售后支持</span>
+            </div>
+        </div>
     </div>
-    <div style="width: 90%;height: 2700px;margin: auto;border: 0 solid transparent;">
+    <div style="width: 90%;height: 3100px;margin: auto;border: 0 solid transparent;">
         <div class="chuizhi">
             <h1 style="font-size: 45px;margin-top: 80px;">我们定制过的开发案例</h1>
             <span style="font-size: 30px;margin-top: -10px;">祝你能顺利找到所遇需要的，让我们来帮你实现</span>
@@ -404,10 +508,21 @@
                 <button class="anlibtn2">广告投放</button>
                 <button class="anlibtn2">H5页面定制</button>
             </div>
-            <div style="width: 100%;height: 750px;">
-                <img src="../img/500174457_banner.png" style="width: 100%;height: 70%;"/>
-                <div style="border: 1px solid lightgray;height: 22%;">
-                    <h1>深圳投资推广署</h1>
+            <div style="width: 100%;height: 850px;">
+                <img src="../img/500174457_banner.png" style="width: 100%;height: 68%;"/>
+                <div style="border: 1px solid lightgray;height: 26%;margin-top: -7px;padding-left: 30px;border-radius: 10px">
+                    <h1 style="font-size: 44px">深圳投资推广署</h1>
+                    <div style="display: flex;">
+                        <button class="picbtn chuizhi">H5</button>
+                        <button class="picbtn chuizhi" style="margin-left: 20px;">代运营</button>
+                        <button class="picbtn chuizhi" style="margin-left: 20px;">开发</button>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%;height: 850px;">
+                <img src="../img/500420407_banner.png" style="width: 100%;height: 68%;"/>
+                <div style="border: 1px solid lightgray;height: 26%;margin-top: -7px;padding-left: 30px;border-radius: 10px">
+                    <h1 style="font-size: 44px">太平洋抽奖</h1>
                     <div style="display: flex;">
                         <button class="picbtn">H5</button>
                         <button class="picbtn" style="margin-left: 20px;">代运营</button>
@@ -415,10 +530,10 @@
                     </div>
                 </div>
             </div>
-            <div style="width: 100%;height: 750px;">
-                <img src="../img/500420407_banner.png" style="width: 100%;height: 70%;"/>
-                <div style="border: 1px solid lightgray;height: 22%;">
-                    <h1>太平洋抽奖</h1>
+            <div style="width: 100%;height: 850px;">
+                <img src="../img/500420407_banner.png" style="width: 100%;height: 68%;"/>
+                <div style="border: 1px solid lightgray;height: 26%;margin-top: -7px;padding-left: 30px;border-radius: 10px">
+                    <h1 style="font-size: 44px">泽众酒店</h1>
                     <div style="display: flex;">
                         <button class="picbtn">H5</button>
                         <button class="picbtn" style="margin-left: 20px;">代运营</button>
@@ -426,18 +541,18 @@
                     </div>
                 </div>
             </div>
-            <div style="width: 100%;height: 750px;">
-                <img src="../img/500420407_banner.png" style="width: 100%;height: 70%;"/>
-                <div style="border: 1px solid lightgray;height: 22%;">
-                    <h1>泽众酒店</h1>
-                    <div style="display: flex;">
-                        <button class="picbtn">H5</button>
-                        <button class="picbtn" style="margin-left: 20px;">代运营</button>
-                        <button class="picbtn" style="margin-left: 20px;">开发</button>
-                    </div>
-                </div>
-            </div>
+            <button style="width: 100%;height: 94px;background-color: #f1f1f1;color: #668eb3;border-radius: 10px;border: 0 solid transparent;font-size: 30px">点击查看更多</button>
         </div>
     </div>
+    <script type="text/javascript">
+        var menulist = false
+        var langlist = false
+        function menu() {
+            menulist = !menulist
+        }
+        function langimg() {
+            langlist = !langlist
+        }
+    </script>
 </body>
 </html>
